@@ -1,0 +1,35 @@
+int x= 160;
+int y= 160;
+
+void main(){
+dibuja();
+}
+
+void dibuja(){
+  animate(ejecutar);
+}
+
+void ejecutar(){
+  player();
+  controles();
+}  
+ 
+void player(){
+  background(56,221,13);
+ fill(255,152,152);
+  ellipse(x,y,15,15);
+ 
+}
+void controles(){
+  if (keyPressed && key=="up"){
+    y = y -5;
+  }
+  if (keyPressed && key=="down"){
+    y = y +5;
+  }
+ if (keyPressed && key=="left"){
+    x = x -5;
+  }
+ if (keyPressed && key=="right"){
+    x = x +5;
+  }}
