@@ -1,0 +1,16 @@
+void main () {
+  animate(ejecutar);
+}
+void ejecutar() {
+  dibuja2();
+  dibuja();
+}
+void dibuja() {   
+  if (mousePressed == true) {
+        rect(90,90,150,150);
+    } else  { 
+   rect(105,105,119,119);
+     }  }
+   void dibuja2() {
+     background(75,234,255);
+   }
