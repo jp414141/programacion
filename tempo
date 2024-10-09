@@ -1,0 +1,20 @@
+
+int time = millis()/1000;
+
+void main(){
+  animate(ejecutar);
+}
+
+
+void ejecutar(){
+
+  int t = time - millis()/1000;
+  println ("milis-time "+ t );
+ 
+  if(t<=-5){
+    time=millis()/1000;
+    t = time - millis()/1000;
+    background(random(256),random(256),random(256));
+  }
+ 
+}
