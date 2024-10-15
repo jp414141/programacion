@@ -1,0 +1,32 @@
+void main (){
+  animate(dibuja);
+}
+
+void dibuja(){
+  background(99,207,255);
+  text("Menu", 150, 150);
+  if (mousePressed){
+  if(mouseButton == LEFTBUTTON){
+  	ellipse(mouseX, mouseY, 50,50);
+    if(keyPressed && key==  "return");{
+      animate(otra);
+    }
+}
+  }
+}
+
+void otra(){
+  background(23,199,87);
+  text("Clasificacion",15,15);
+    if(keyPressed && key == "esc");{
+    animate(otra2);
+  }
+}
+
+void otra2(){
+  background(23,98,229);
+  text("Instrucciones",15,15);
+  if(keyPressed && key == "enter");{
+      
+  }
+}
