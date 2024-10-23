@@ -1,0 +1,48 @@
+void main () {
+ dibuja() ;
+  
+}
+void name() {
+  textSize(10) ;
+  String nombre = readString("Di tu nombre") ;
+}
+void dibuja () {
+  animate (ejecutar) ;
+}
+  
+void ejecutar () {  
+  image("https://i.pinimg.com/736x/91/04/2e/91042e89f41c72294ea4e05cf844c342.jpg",0,0,320,320) ;
+  textSize(15);
+  text("Galaxy Invaders", 130,50);
+  dibujaBoton(130,100, "Jugar") ;
+  dibujaBoton(130,150, "Controles") ;
+  dibujaBoton(130,200,"Créditos") ;
+ animate(fondo) ;
+}
+void fondo() {
+  if(mousePressed == true)
+   if(mouseButton == LEFTBUTTON) 
+    if(mouseY > 100 && mouseY < 130) {
+      pantalla("Próximamente") ;
+  } else if(mouseY > 150 && mouseY < 180) {
+    pantalla("A=Izquierda, S=Derecha") ;
+  } else if (mouseY > 200 && mouseY < 230) {
+    pantalla("Realizado por Juan Pedro");
+  } else if (mouseY > 250 && mouseY < 280) {
+    dibuja() ;
+  }
+}
+
+void dibujaBoton(int x, int y, String texto) {
+  fill(mouseX > x && mouseX < x + 100 && mouseY > y && mouseY < y + 30 ? 180 : 150) ;
+  rect(x, y, 100,30) ;
+  fill(255,255,255);
+  text(texto, x + 10,y + 20) ;
+}
+void pantalla(String nombre) {
+background(54,9,255);
+ fill(255,255,255) ;
+  textSize (15);
+  text(nombre, 50,50) ;
+  dibujaBoton(50, 250,"Atrás") ;
+}
