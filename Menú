@@ -25,7 +25,7 @@ void fondo() {
     if(mouseY > 100 && mouseY < 130) {
       pantalla("Próximamente") ;
   } else if(mouseY > 150 && mouseY < 180) {
-    pantalla("A=Izquierda, S=Derecha") ;
+    pantalla("<--=Izquierda, -->=Derecha") ;
   } else if (mouseY > 200 && mouseY < 230) {
     pantalla("Realizado por Juan Pedro");
   } else if (mouseY > 250 && mouseY < 280) {
