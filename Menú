@@ -11,7 +11,7 @@ void dibuja () {
 }
   
 void ejecutar () {  
-  image("https://i.pinimg.com/736x/91/04/2e/91042e89f41c72294ea4e05cf844c342.jpg",0,0,320,320) ;
+  image("https://static.vecteezy.com/system/resources/previews/046/807/271/non_2x/pixel-art-illustration-space-background-pixelated-space-background-space-background-nebula-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-vector.jpg",0,0,320,320) ;
   textSize(15);
   text("Galaxy Invaders", 130,50);
   dibujaBoton(130,100, "Jugar") ;
@@ -40,7 +40,7 @@ void dibujaBoton(int x, int y, String texto) {
   text(texto, x + 10,y + 20) ;
 }
 void pantalla(String nombre) {
-background(54,9,255);
+background(28,98,116);
  fill(255,255,255) ;
   textSize (15);
   text(nombre, 50,50) ;
