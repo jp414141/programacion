@@ -11,20 +11,14 @@ void dibuja(){
 
 void ejecutar(){
   player();
-  controles();
+  asteroide();
 }  
  
 void player(){
    image("https://static.vecteezy.com/system/resources/previews/046/807/271/non_2x/pixel-art-illustration-space-background-pixelated-space-background-space-background-nebula-pixelated-for-the-pixel-art-game-and-icon-for-website-and-game-old-school-retro-vector.jpg",0,0,320,320); 
- image ("https://i.pinimg.com/originals/5d/54/2f/5d542f9a2c4b6591b4104266d1786c18.png",x,y,35,35);
- 
-}
-void controles(){
-  
- if (keyPressed && key=="left"){
-    x = x -5;
+ image ("https://i.pinimg.com/originals/5d/54/2f/5d542f9a2c4b6591b4104266d1786c18.png",mouseX,y,35,35);
+
   }
- if (keyPressed && key=="right"){
-    x = x +5;
-  }}
  
+void asteroide(){
+  if
