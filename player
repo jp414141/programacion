@@ -1,6 +1,7 @@
 int x= 160;
 int y= 275;
-
+int AsX = random(0,320);
+int AsY = 50;
 void main(){
 dibuja();
 }
@@ -21,4 +22,8 @@ void player(){
   }
  
 void asteroide(){
-  if
+  ellipse(AsX,AsY,40,40);
+  fill(86,64,9);
+  if (AsX == random (0,320));
+  	AsY= (320);
+}
